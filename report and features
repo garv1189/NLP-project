@@ -1,0 +1,60 @@
+Features of the Text Summarization Project
+1. Text Input Options
+Users can choose from multiple input methods:
+
+Text Input: Type or paste the text directly into a text area.
+File Upload: Upload a text file (.txt) containing the text to summarize.
+URL Input: Enter a URL to fetch the text (note: URL fetching logic can be implemented using libraries like requests and BeautifulSoup).
+2. Text Preprocessing
+The application automatically cleans the input text by:
+
+Removing extra spaces.
+Eliminating special characters.
+This ensures that the summarization model receives clean, well-formatted text.
+
+3. Summarization
+The application uses advanced Natural Language Processing (NLP) models (like BART or T5) to generate concise summaries of the input text. Users can:
+
+View the Summary: The generated summary is displayed prominently on the page.
+Download the Summary: Users can download the summary as a text file.
+4. Keyword Extraction
+The application extracts keywords from the input text using TF-IDF (Term Frequency-Inverse Document Frequency). Users can:
+
+View Keywords: The extracted keywords are displayed below the summary, providing insights into the main topics covered in the text.
+5. Sentiment Analysis
+The app analyzes the sentiment of the input text using the TextBlob library, which provides:
+
+Polarity Score: Ranges from -1 (negative) to 1 (positive), indicating the overall sentiment.
+Subjectivity Score: Ranges from 0 (objective) to 1 (subjective), indicating how subjective the text is.
+6. Evaluation Metrics
+Users can provide a reference summary to evaluate the quality of the generated summary:
+
+ROUGE Metrics: The application calculates ROUGE scores (ROUGE-1, ROUGE-2, ROUGE-L) to measure the overlap between the generated and reference summaries. These scores help assess the quality of summarization.
+7. User-Friendly Interface
+The Streamlit interface is designed to be clean and intuitive:
+
+Sidebar Navigation: Users can easily switch between input types using the sidebar.
+Responsive Layout: The layout adjusts to different screen sizes, making it accessible on various devices.
+Interactive Components: Buttons and text areas make the app interactive and engaging.
+Conclusion
+The Text Summarization Plus project offers a comprehensive tool for summarizing texts while providing
+additional insights through keyword extraction and sentiment analysis. The evaluation feature allows
+users to assess the quality of the generated summaries against reference texts, making it useful for
+both academic and practical applications.
+
+For example usage use this text below:
+
+Title: Advances in Renewable Energy Technology
+
+"Recent advancements in renewable energy technology are paving the way for a more sustainable future.
+Innovations in solar and wind energy are becoming increasingly cost-effective, making them viable alternatives to fossil fuels.
+The cost of solar panels has dropped significantly over the last decade, allowing households and businesses to harness clean energy.
+As a result, more people are adopting solar power, which helps reduce greenhouse gas emissions and dependence on traditional energy sources.
+In addition to solar energy, wind power has also seen remarkable growth.
+Large wind farms are now generating substantial amounts of electricity, contributing to national grids.
+Governments worldwide are recognizing the importance of clean energy initiatives and are investing heavily in research and development.
+This transition not only addresses the pressing issue of climate change but also promotes energy independence, job creation, and economic
+growth in the renewable energy sector.
+As more countries commit to ambitious targets for reducing carbon emissions, the shift
+towards renewable energy is gaining momentum, making it a critical component of global efforts to combat climate
+change."

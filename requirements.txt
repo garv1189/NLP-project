@@ -1,0 +1,11 @@
+streamlit
+nltk
+transformers
+torch
+scikit-learn
+beautifulsoup4
+pandas
+textblob
+rouge
+matplotlib
+wordcloud
